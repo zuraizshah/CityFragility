@@ -24,12 +24,13 @@
 
   <main class="container">
     <section class="card hero-card">
-      <h2>When a road closes, the nearest hospital can suddenly be much farther away</h2>
+      <h2>When a road closes, the nearest mapped healthcare facility can suddenly be much farther away</h2>
       <p class="hero-lead">Getting to care in a city depends on the road network, not just
         straight-line distance: one-way streets, detours and blocked links change which
-        hospital is truly closest. <b>CityFragility</b> measures this for one carefully
-        bounded slice of <b>central Karachi</b> — it “closed” 100 real OpenStreetMap road
-        segments in a computer model of the driving network and recalculated, from 100
+        mapped facility is truly closest. <b>CityFragility</b> measures this for one carefully
+        bounded slice of <b>central Karachi</b> — it “closed” 100 real OpenStreetMap ways
+        (whole road centre-line features, each of which can span several physical street
+        segments) in a computer model of the driving network and recalculated, from 100
         sample locations, how far the nearest mapped healthcare facility became by road.
         That is <b>10,000 before-and-after measurements</b>, published with their
         uncertainties.</p>
@@ -48,10 +49,11 @@
     <section class="card">
       <h2>Study area &amp; tested roads</h2>
       <p class="hint" id="area-note">Loading study area…</p>
-      <div id="map" role="img" aria-label="Map of the central Karachi study area with tested road segments"></div>
+      <div id="map" role="img" aria-label="Map of the central Karachi study area with tested OSM ways"></div>
       <div class="legend" id="map-legend"></div>
       <p class="hint">Dots = 100 grid-sampled origins. Coloured lines = the 100
-        tested OSM ways (blue → red = lower → higher measured composite
+        tested OSM ways — whole centre-line features, each possibly spanning several
+        physical street segments (blue → red = lower → higher measured composite
         disruption score). Dashed rectangles = analysis windows. Click a road
         for its measured effects. Basemap © OpenStreetMap contributors.</p>
     </section>
@@ -115,9 +117,14 @@
         <li><a href="#sensitivity">Ranking sensitivity</a> — why the top-5 lists are exploratory</li>
         <li><a href="#limits">Limitations</a> — what this study does not claim</li>
         <li><a href="#findings">Validation findings</a> — reproducibility &amp; independent cross-check</li>
-        <li>Full documents (<code>METHODOLOGY.md</code>, <code>LIMITATIONS.md</code>,
-          <code>REPRODUCIBILITY.md</code>, <code>DATA_SOURCES.md</code>, research paper)
-          live in the project repository — <span id="repo-link" class="pending-link">link will appear here once the repository is public</span></li>
+        <li>Full documents in the
+          <a href="https://github.com/zuraizshah/CityFragility">project repository</a>:
+          <a href="https://github.com/zuraizshah/CityFragility/blob/main/RESEARCH_PAPER.md">RESEARCH_PAPER.md</a> ·
+          <a href="https://github.com/zuraizshah/CityFragility/blob/main/METHODOLOGY.md">METHODOLOGY.md</a> ·
+          <a href="https://github.com/zuraizshah/CityFragility/blob/main/LIMITATIONS.md">LIMITATIONS.md</a> ·
+          <a href="https://github.com/zuraizshah/CityFragility/blob/main/REPRODUCIBILITY.md">REPRODUCIBILITY.md</a> ·
+          <a href="https://github.com/zuraizshah/CityFragility/blob/main/DATA_SOURCES.md">DATA_SOURCES.md</a> —
+          <span id="repo-link"><a href="https://github.com/zuraizshah/CityFragility">github.com/zuraizshah/CityFragility</a></span></li>
       </ul>
     </section>
 
@@ -142,7 +149,8 @@ env/conda/bin/python -m uvicorn webapp.server:app --host 127.0.0.1 --port 8000
     <p>Precomputed research scenarios for a bounded central-Karachi study area.
       Not peer-reviewed. Not a citywide model. No flood, ambulance, casualty or
       emergency-capability predictions. Facility points are unverified OSM tags.
-      Code licence: to be chosen by the author before public release (data remains ODbL).</p>
+      Code: <a href="https://github.com/zuraizshah/CityFragility/blob/main/LICENSE">MIT License</a>
+      © 2026 Zuraiz Shah. OSM-derived data remains subject to the ODbL terms above.</p>
   </footer>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

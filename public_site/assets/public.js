@@ -5,7 +5,7 @@
 /* Set this once the repository is public, e.g.
    "https://github.com/<user>/CityFragility" — until then the docs list
    shows a pending label instead of a broken link. */
-const REPO_URL = "";
+const REPO_URL = "https://github.com/zuraizshah/CityFragility";
 "use strict";
 
 (() => {
@@ -33,7 +33,7 @@ const REPO_URL = "";
       `<div class="tile"><b>${study.graph_edges.toLocaleString()}</b><span>directed edges</span></div>` +
       `<div class="tile"><b>${study.mapped_facilities}</b><span>mapped facilities (unverified)</span></div>` +
       `<div class="tile"><b>${s.n_origins}</b><span>grid-sampled origins</span></div>` +
-      `<div class="tile"><b>${s.n_candidates_completed}</b><span>road ways tested</span></div>` +
+      `<div class="tile"><b>${s.n_candidates_completed}</b><span>OSM ways tested</span></div>` +
       `<div class="tile"><b>${(s.n_origins * s.n_candidates_completed).toLocaleString()}</b><span>before/after comparisons</span></div>`;
     const b = study.buffer_bbox_wgs84_wsen;
     $("area-note").innerHTML =
