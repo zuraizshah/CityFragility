@@ -1,0 +1,44 @@
+# ---- environments & caches (never commit) ----
+env/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+
+# ---- large regenerable OSM data (see DATA_SOURCES.md for how to recreate) ----
+data/source/
+data/cache/
+*.osm.pbf
+*.pbf.sha256
+data/network_drive.graphml
+*.graphml
+
+# ---- experiment resume state & smoke-test outputs (regenerable, 24 s rerun) ----
+reports/phase2_checkpoint/
+reports/phase2_checkpoint_smoke/
+reports/*_smoke.*
+
+# ---- logs & local process state ----
+reports/server.log
+reports/server.log*
+reports/pytest_*.txt
+reports/pytest_output.txt
+nohup.out
+*.log
+
+# ---- secrets / local config (none currently exist — guard rails) ----
+.env
+.env.*
+*.pem
+*.key
+secrets.*
+credentials.*
+
+# ---- editor / tooling ----
+.idea/
+.vscode/
+*.swp

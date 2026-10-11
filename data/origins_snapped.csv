@@ -1,0 +1,7 @@
+name,ref_lat,ref_lon,origin_source,snapped_node,snapped_lat,snapped_lon,snap_dist_m,snap_flag
+"Saddar Chowrangi, Karachi",24.8634,67.0126,approximate_anchor_fallback,7085637050,24.8634956,67.012111,50.55,False
+"Empress Market, Karachi",24.8622181,67.0296789,nominatim:https://nominatim.openstreetmap.org/search?q=Empress+Market%2C+Karachi&format=jsonv2&limit=5,7809203797,24.8615977,67.0290963,90.5,False
+"Mazar-e-Quaid, Karachi",24.8746966,67.0393217,nominatim:https://nominatim.openstreetmap.org/search?q=Mazar-e-Quaid%2C+Karachi&format=jsonv2&limit=5,6245984834,24.8727751,67.0388309,218.57,True
+"Do Talwar, Karachi",24.8210182,67.0340956,nominatim:https://nominatim.openstreetmap.org/search?q=Do+Talwar%2C+Karachi&format=jsonv2&limit=5,7806744700,24.8208759,67.0338302,31.12,False
+"DHA Phase 5, Karachi",24.8071358,67.0444644,nominatim:https://nominatim.openstreetmap.org/search?q=DHA+Phase+5%2C+Karachi&format=jsonv2&limit=5,7511330531,24.8070065,67.0445776,18.34,False
+"NIPA Chowrangi, Karachi",24.864,67.07,approximate_anchor_fallback,976471307,24.8639519,67.0697851,22.36,False

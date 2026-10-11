@@ -1,0 +1,15 @@
+{
+ "nodes": 45304,
+ "edges": 122599,
+ "candidates": 20,
+ "hospitals_usable_nodes": 419,
+ "graph_load_s_reference": 6.69,
+ "precomputed_at": "2026-10-11 01:02:40",
+ "files": {
+  "candidates": "phase1_candidates.json",
+  "roads": "phase2_roads.geojson",
+  "details": "phase2_vuln_details.json"
+ },
+ "note": "Static counts for /api/health before the graph is lazy-loaded. Matches the real graph; refreshed by src/phase4_precompute.py.",
+ "hospitals_total": 453
+}

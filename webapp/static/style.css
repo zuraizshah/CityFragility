@@ -1,0 +1,309 @@
+/* CityFragility Phase 1 — dashboard styles */
+:root {
+  --bg: #0b1220;
+  --panel: #111a2e;
+  --panel-2: #0e1626;
+  --border: #223050;
+  --text: #e6edf7;
+  --muted: #93a4c3;
+  --accent: #2dd4bf;
+  --accent-2: #f59e0b;
+  --danger: #f87171;
+  --baseline: #38bdf8;
+  --alternative: #fb7185;
+  --candidate: #facc15;
+  --hospital: #fb923c;
+  --origin: #818cf8;
+  --radius: 10px;
+  font-size: 15px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- top bar ---------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: linear-gradient(90deg, #0d1526, #101c33);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.brand { display: flex; align-items: center; gap: 0.75rem; }
+.brand-mark { font-size: 1.8rem; color: var(--accent); }
+.brand h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+.tagline { margin: 0; color: var(--muted); font-size: 0.78rem; }
+.topbar-stats { display: flex; gap: 1.1rem; flex-wrap: wrap; }
+.stat { color: var(--muted); font-size: 0.8rem; }
+.stat b { color: var(--text); font-variant-numeric: tabular-nums; }
+
+/* ---------- layout ---------- */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 430px) 1fr;
+  flex: 1;
+  min-height: 0;
+}
+.sidebar {
+  overflow-y: auto;
+  padding: 1rem;
+  background: var(--panel-2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.map-wrap { position: relative; min-height: 420px; }
+#map { position: absolute; inset: 0; background: #0a0f1a; }
+
+/* ---------- panels ---------- */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem 1rem;
+}
+.panel-muted { opacity: 0.95; }
+.panel h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+.hint { color: var(--muted); font-size: 0.8rem; line-height: 1.45; margin: 0.35rem 0; }
+.hint code, .prov code { color: #c4d3ee; background: #1a2740; padding: 0 4px; border-radius: 4px; font-size: 0.75rem; }
+.muted { color: var(--muted); }
+
+.field-label { display: block; font-size: 0.78rem; color: var(--muted); margin: 0.6rem 0 0.25rem; }
+select {
+  width: 100%;
+  background: #0c1424;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.85rem;
+}
+select:focus { outline: 1px solid var(--accent); }
+
+.btn-row { display: flex; gap: 0.5rem; margin-top: 0.3rem; }
+.btn {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s, opacity 0.15s;
+}
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #04211c; border-color: transparent; }
+.btn-primary:not(:disabled):hover { filter: brightness(1.1); }
+.btn-ghost { background: transparent; color: var(--text); }
+.btn-ghost:not(:disabled):hover { border-color: var(--accent); color: var(--accent); }
+
+.status { margin-top: 0.6rem; font-size: 0.8rem; line-height: 1.45; min-height: 1.2em; }
+.status.ok { color: var(--accent); }
+.status.err { color: var(--danger); }
+.status.busy { color: var(--accent-2); }
+
+/* ---------- road details ---------- */
+.road-details {
+  margin-top: 0.7rem;
+  background: #0c1424;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.road-details .rd-name { font-weight: 700; color: var(--text); }
+.road-details .rd-meta { color: var(--muted); }
+.chip {
+  display: inline-block;
+  font-size: 0.68rem;
+  padding: 1px 7px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  vertical-align: middle;
+}
+.chip-tested { color: var(--accent); border-color: var(--accent); }
+.chip-testable { color: var(--accent-2); border-color: var(--accent-2); }
+
+/* ---------- results table ---------- */
+.table-wrap { overflow-x: auto; margin-top: 0.5rem; }
+table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+th, td { text-align: left; padding: 0.4rem 0.45rem; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; }
+td { font-variant-numeric: tabular-nums; }
+tr.empty td { color: var(--muted); font-style: italic; }
+tbody tr[data-focus] { cursor: pointer; }
+tbody tr.focused { background: #16233d; }
+.tag { font-size: 0.68rem; padding: 1px 6px; border-radius: 99px; border: 1px solid; }
+.tag-unchanged { color: var(--muted); border-color: var(--border); }
+.tag-delta { color: var(--accent-2); border-color: var(--accent-2); }
+.tag-disc { color: var(--danger); border-color: var(--danger); }
+.delta-pos { color: var(--accent-2); }
+.na { color: var(--muted); }
+
+/* ---------- legend & provenance ---------- */
+.legend { display: flex; flex-wrap: wrap; gap: 0.5rem 0.9rem; font-size: 0.74rem; color: var(--muted); margin: 0.2rem 0 0.4rem; }
+.swatch { display: inline-block; width: 14px; height: 5px; border-radius: 3px; margin-right: 4px; vertical-align: middle; }
+.swatch-baseline { background: var(--baseline); }
+.swatch-alternative { background: var(--alternative); }
+.swatch-candidate { background: var(--candidate); }
+.swatch-hospital { background: var(--hospital); border-radius: 50%; width: 9px; height: 9px; }
+.swatch-origin { background: var(--origin); border-radius: 50%; width: 9px; height: 9px; }
+
+.prov { margin: 0.2rem 0 0; padding-left: 1.05rem; }
+.prov li { margin-bottom: 0.45rem; color: var(--muted); font-size: 0.76rem; line-height: 1.45; }
+.prov li b { color: var(--text); }
+
+/* ---------- map overlays ---------- */
+.map-banner {
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13, 21, 38, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+  max-width: 82%;
+  text-align: center;
+  pointer-events: none;
+}
+.map-banner.warn { border-color: var(--danger); color: #fecaca; }
+.map-banner.info { border-color: var(--accent); color: #ccfbf1; }
+.hidden { display: none !important; }
+
+.leaflet-container { font: inherit; }
+.leaflet-popup-content-wrapper { background: #101a2e; color: var(--text); border-radius: 8px; }
+.leaflet-popup-tip { background: #101a2e; }
+.leaflet-popup-content { margin: 0.55rem 0.75rem; font-size: 0.78rem; line-height: 1.45; }
+.popup-title { font-weight: 700; margin-bottom: 2px; }
+.popup-warn { color: var(--hospital); }
+.popup-muted { color: var(--muted); font-size: 0.72rem; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { border-right: none; border-top: 1px solid var(--border); order: 2; }
+  .map-wrap { order: 1; min-height: 55vh; }
+  .topbar-stats { display: none; }
+}
+
+/* ---------- Phase 2: tabs + explorer ---------- */
+.tabbar { display: flex; gap: 0.4rem; margin-bottom: 0.2rem; }
+.tab {
+  flex: 1;
+  background: var(--panel);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tab.active { background: #16233d; color: var(--accent); border-color: var(--accent); }
+
+.vuln-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem; margin: 0.3rem 0; }
+.vs-item {
+  background: #0c1424;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+}
+.vs-item b { display: block; font-size: 1rem; color: var(--text); }
+.vs-item span { font-size: 0.66rem; color: var(--muted); }
+
+input[type="range"] { width: 100%; accent-color: var(--accent); }
+.chk { display: flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; }
+
+.vuln-table-wrap { max-height: 340px; overflow-y: auto; }
+#vuln-table tbody tr { cursor: pointer; }
+#vuln-table tbody tr.focused {
+  background: #16233d;
+  box-shadow: inset 3px 0 0 #f43f5e; /* matches the selected-road map highlight */
+}
+.tiny { font-size: 0.68rem; }
+
+.detail-grid { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.5rem; }
+.detail-metrics { display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; font-size: 0.76rem; color: var(--muted); }
+.detail-metrics b { color: var(--text); }
+.worst-box {
+  background: #0c1424;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  margin: 0.4rem 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* ---------- Phase 4: product polish ---------- */
+.hero h2 {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 1.02rem;
+  color: var(--text);
+  line-height: 1.35;
+}
+.steps { margin: 0.2rem 0 0.4rem; padding-left: 1.15rem; }
+.steps li { margin-bottom: 0.4rem; color: var(--muted); font-size: 0.8rem; line-height: 1.45; }
+.steps li b { color: var(--text); }
+.prov.good li::marker { color: var(--accent); }
+.prov.bad li::marker { color: var(--danger); }
+.plain-box {
+  background: #0c1424;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+.plain-box p { margin: 0.35rem 0 0; color: var(--muted); }
+.stat.badge {
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  padding: 2px 10px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.stat.badge.badge-live { color: var(--accent); border-color: var(--accent); }
+.contain { contain: content; }
+.site-footer {
+  padding: 0.55rem 1.2rem;
+  border-top: 1px solid var(--border);
+  background: #0d1526;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+.site-footer code { color: #c4d3ee; }

@@ -1,0 +1,973 @@
+{
+ "tag": "cityfragility-phase3",
+ "date": "2026-10-11",
+ "seed": 20261010,
+ "runtime": {
+  "total_s": 11.3,
+  "peak_rss_mb": 1779.1
+ },
+ "reproducibility": {
+  "per_origin_rows": 10000,
+  "ways_recomputed": 100,
+  "metric_mismatches": [],
+  "metric_columns_checked": 8,
+  "rankings_match_stored_summary": {
+   "by_affected_count": true,
+   "by_median_detour": true,
+   "by_max_detour": true,
+   "by_disconnections": true,
+   "by_composite_score": true
+  },
+  "all_rankings_match": true
+ },
+ "cross_check": {
+  "engine": "networkx.multi_source_dijkstra on the reversed graph with path reconstruction (Phase 0-verified routing family, independent implementation from the Phase 2 heap Dijkstra)",
+  "ways_checked": [
+   26182600,
+   182385941,
+   39998276,
+   485726463,
+   40119137,
+   219168400,
+   479722526,
+   1475627437,
+   26800453,
+   221699173,
+   25976974
+  ],
+  "ways_count": 11,
+  "origin_rows_checked": 89,
+  "baseline_distance_mismatches": 0,
+  "disrupted_distance_mismatches": 0,
+  "facility_identity_mismatches": 0,
+  "disconnect_flag_mismatches": 0,
+  "switch_flag_mismatches": 0,
+  "per_way": [
+   {
+    "osmid": 26182600,
+    "rows_checked": 9,
+    "mismatches": []
+   },
+   {
+    "osmid": 182385941,
+    "rows_checked": 7,
+    "mismatches": []
+   },
+   {
+    "osmid": 39998276,
+    "rows_checked": 8,
+    "mismatches": []
+   },
+   {
+    "osmid": 485726463,
+    "rows_checked": 8,
+    "mismatches": []
+   },
+   {
+    "osmid": 40119137,
+    "rows_checked": 7,
+    "mismatches": []
+   },
+   {
+    "osmid": 219168400,
+    "rows_checked": 11,
+    "mismatches": []
+   },
+   {
+    "osmid": 479722526,
+    "rows_checked": 10,
+    "mismatches": []
+   },
+   {
+    "osmid": 1475627437,
+    "rows_checked": 10,
+    "mismatches": []
+   },
+   {
+    "osmid": 26800453,
+    "rows_checked": 9,
+    "mismatches": []
+   },
+   {
+    "osmid": 221699173,
+    "rows_checked": 5,
+    "mismatches": []
+   },
+   {
+    "osmid": 25976974,
+    "rows_checked": 5,
+    "mismatches": []
+   }
+  ],
+  "restore_verified": true
+ },
+ "sensitivity": {
+  "lon_median": 67.04580585,
+  "n_west": 50,
+  "n_east": 50,
+  "odd_even": {
+   "by_affected_count": {
+    "top5_a": [
+     58722506,
+     219168400,
+     479722526,
+     1475627437,
+     26182600
+    ],
+    "top5_b": [
+     219168400,
+     26182600,
+     26800453,
+     40119137,
+     40119147
+    ],
+    "overlap": {
+     "top_k": 5,
+     "overlap": 2,
+     "union": 8
+    },
+    "ways_with_effect_a": 47,
+    "ways_with_effect_b": 50
+   },
+   "by_composite_score": {
+    "top5_a": [
+     26182600,
+     485726463,
+     182385941,
+     39998276,
+     481455523
+    ],
+    "top5_b": [
+     39998276,
+     26182600,
+     485726463,
+     40119137,
+     481455523
+    ],
+    "overlap": {
+     "top_k": 5,
+     "overlap": 4,
+     "union": 6
+    },
+    "ways_with_effect_a": 47,
+    "ways_with_effect_b": 50
+   }
+  },
+  "east_west": {
+   "by_affected_count": {
+    "top5_a": [
+     26182600,
+     26800453,
+     58692178,
+     58706476,
+     58722506
+    ],
+    "top5_b": [
+     219168400,
+     479722526,
+     1475627437,
+     359660656,
+     481455523
+    ],
+    "overlap": {
+     "top_k": 5,
+     "overlap": 0,
+     "union": 10
+    },
+    "ways_with_effect_a": 40,
+    "ways_with_effect_b": 17
+   },
+   "by_composite_score": {
+    "top5_a": [
+     26182600,
+     182385941,
+     485726463,
+     40119137,
+     26800453
+    ],
+    "top5_b": [
+     39998276,
+     481455523,
+     219168400,
+     479722526,
+     1475627437
+    ],
+    "overlap": {
+     "top_k": 5,
+     "overlap": 0,
+     "union": 10
+    },
+    "ways_with_effect_a": 40,
+    "ways_with_effect_b": 17
+   }
+  },
+  "note": "Rankings are computed independently within each partition (half the origins each). Low overlap means ranks depend on which origins were sampled \u2014 not that any road is uniquely critical for Karachi."
+ },
+ "facility_audit": {
+  "total_facilities": 453,
+  "usable": 453,
+  "usable_snap_nodes": 419,
+  "snap_dist_m": {
+   "median": 27.1,
+   "p95": 73.6,
+   "max": 175.5
+  },
+  "snap_gt_250m": 0,
+  "outside_core_usable": 149,
+  "limited_scope_name_usable": 124,
+  "near_duplicate_pairs_50m": [
+   {
+    "a": 4610363491,
+    "b": 5109119037,
+    "name_a": "Civil hospital, Karachi",
+    "name_b": "Eye OPD Civil Hospital"
+   },
+   {
+    "a": 4734370156,
+    "b": 4774671213,
+    "name_a": "Medicare Cardiac & General Hospital",
+    "name_b": "Al-Khaleej Towers"
+   },
+   {
+    "a": 4734370156,
+    "b": 5128109100,
+    "name_a": "Medicare Cardiac & General Hospital",
+    "name_b": "Royal Institute Of Medicine & Surgery"
+   },
+   {
+    "a": 4769800460,
+    "b": 5132890214,
+    "name_a": "New Urgent Care Hospital",
+    "name_b": "Fomg Hospital"
+   },
+   {
+    "a": 4774671213,
+    "b": 5128109100,
+    "name_a": "Al-Khaleej Towers",
+    "name_b": "Royal Institute Of Medicine & Surgery"
+   },
+   {
+    "a": 4791846660,
+    "b": 5153106194,
+    "name_a": "Al Zaeem Medical Center",
+    "name_b": "Sahil Medical Centre"
+   },
+   {
+    "a": 4810084312,
+    "b": 5115540200,
+    "name_a": "Agha Khan Laboratory",
+    "name_b": "Shan Hospital"
+   },
+   {
+    "a": 5079173649,
+    "b": 12161785545,
+    "name_a": "Baqai Oncology",
+    "name_b": "Baqai Medical University \u00b7 Rheumatology Unit"
+   },
+   {
+    "a": 5079173650,
+    "b": 12161786967,
+    "name_a": "Al Murtaza Hospital",
+    "name_b": "Baqai Foot Care Clinic"
+   },
+   {
+    "a": 5079173650,
+    "b": 12161793660,
+    "name_a": "Al Murtaza Hospital",
+    "name_b": "Baqai Institute of Cardiovascular Disease"
+   },
+   {
+    "a": 5079542898,
+    "b": 5079542899,
+    "name_a": "AO Medical Centre",
+    "name_b": "Liaquat National Hospital"
+   },
+   {
+    "a": 5079542915,
+    "b": 5130921749,
+    "name_a": "Malik Hospital",
+    "name_b": "Farzana Clinic"
+   },
+   {
+    "a": 5079542915,
+    "b": 12206291365,
+    "name_a": "Malik Hospital",
+    "name_b": "Mallick Medical Center"
+   },
+   {
+    "a": 5079542915,
+    "b": 12206303950,
+    "name_a": "Malik Hospital",
+    "name_b": "(DENTAL DEPARTMENT)HAWWA MEDICAL CENTER"
+   },
+   {
+    "a": 5079542915,
+    "b": 12206317132,
+    "name_a": "Malik Hospital",
+    "name_b": "Hawwa Medical Center \u062d\u0648\u0627 \u0645\u06cc\u0688\u06cc\u06a9\u0644 \u0633\u06cc\u0646\u0679\u0631"
+   },
+   {
+    "a": 5109119036,
+    "b": 5128555085,
+    "name_a": "Benazir Trauma Center",
+    "name_b": "SMBB Trauma Centre, Dr Ruth KM Pfau Civil Hospital"
+   },
+   {
+    "a": 5119821477,
+    "b": 12153498094,
+    "name_a": "Gazdarabad hospital",
+    "name_b": "Eduljee Dinshaw Dispensary"
+   },
+   {
+    "a": 5126962161,
+    "b": 12190967951,
+    "name_a": "Ankle Seria Hospital",
+    "name_b": "GMT Centre"
+   },
+   {
+    "a": 5126962161,
+    "b": 12191285743,
+    "name_a": "Ankle Seria Hospital",
+    "name_b": "Dr Akhtar Khan Rajas Clinic"
+   },
+   {
+    "a": 5126962161,
+    "b": 12191677244,
+    "name_a": "Ankle Seria Hospital",
+    "name_b": "Khalil Nadeem Packages Surgery Services"
+   },
+   {
+    "a": 5128018441,
+    "b": 12190967951,
+    "name_a": "ISM Hospital",
+    "name_b": "GMT Centre"
+   },
+   {
+    "a": 5128018441,
+    "b": 12191285743,
+    "name_a": "ISM Hospital",
+    "name_b": "Dr Akhtar Khan Rajas Clinic"
+   },
+   {
+    "a": 5128018441,
+    "b": 12213603842,
+    "name_a": "ISM Hospital",
+    "name_b": "Al Taj diagnostic & Consultant Clinics"
+   },
+   {
+    "a": 5128018441,
+    "b": 12213606437,
+    "name_a": "ISM Hospital",
+    "name_b": "The Liver Centre"
+   },
+   {
+    "a": 5128396158,
+    "b": 12184202350,
+    "name_a": "Fatimiyah Hospital",
+    "name_b": "Fatmiyah Dialysis Center . Dr.Mehdi"
+   },
+   {
+    "a": 5128441355,
+    "b": 5128441357,
+    "name_a": "Hilal-e-Ahmer Hospital (Red Crescent)",
+    "name_b": "Jps (CT Scan, MRI & MRA) Diagnostic Centre"
+   },
+   {
+    "a": 5128555084,
+    "b": 681766195,
+    "name_a": "Deewan Farooque Medical Complex (SIUT)",
+    "name_b": "Sindh Institute of Medical Sciences (SIUT)"
+   },
+   {
+    "a": 5128555085,
+    "b": 5133026860,
+    "name_a": "SMBB Trauma Centre, Dr Ruth KM Pfau Civil Hospital",
+    "name_b": "Childlife Foundation - CHK Pediatric ER"
+   },
+   {
+    "a": 5130890305,
+    "b": 12161779047,
+    "name_a": "Jamiyat Hospital",
+    "name_b": "B.H.Y Hospital (Dr. Ahmed S.Y Dermatologist)"
+   },
+   {
+    "a": 5130890305,
+    "b": 12161817397,
+    "name_a": "Jamiyat Hospital",
+    "name_b": "Begum Haji Yousuf Hospital"
+   },
+   {
+    "a": 5145372003,
+    "b": 12250819419,
+    "name_a": "POLIO Control Room",
+    "name_b": "EPI HAll Government Of Sindh"
+   },
+   {
+    "a": 5145372004,
+    "b": 12250823652,
+    "name_a": "EOC Buliding",
+    "name_b": "Eye Ward-11, Jinnah Hospital"
+   },
+   {
+    "a": 5281786565,
+    "b": 12178176531,
+    "name_a": "Fatimid Foundation Karachi",
+    "name_b": "Physiotherapy facilities available"
+   },
+   {
+    "a": 5300544464,
+    "b": 12137573946,
+    "name_a": "Rida Medical Center",
+    "name_b": "Rida Medical Centre"
+   },
+   {
+    "a": 5346835905,
+    "b": 12231658518,
+    "name_a": "Sultan Hospital",
+    "name_b": "Qayyum baig Memorial Dental Clinic"
+   },
+   {
+    "a": 5346894294,
+    "b": 12216097628,
+    "name_a": "Indus Hospital Dialysis Centre",
+    "name_b": "Indus Hospital, Dialysis Center"
+   },
+   {
+    "a": 6043702245,
+    "b": 6059395133,
+    "name_a": "Majid Clinic",
+    "name_b": "Fatima Jinnah Dental Hospital"
+   },
+   {
+    "a": 6043702245,
+    "b": 7229485433,
+    "name_a": "Majid Clinic",
+    "name_b": "Azam Town General Hospital"
+   },
+   {
+    "a": 6043702245,
+    "b": 641815046,
+    "name_a": "Majid Clinic",
+    "name_b": "Fatima Jinan Dental Hospital"
+   },
+   {
+    "a": 6059395133,
+    "b": 7229485433,
+    "name_a": "Fatima Jinnah Dental Hospital",
+    "name_b": "Azam Town General Hospital"
+   },
+   {
+    "a": 6059395133,
+    "b": 641815046,
+    "name_a": "Fatima Jinnah Dental Hospital",
+    "name_b": "Fatima Jinan Dental Hospital"
+   },
+   {
+    "a": 6085408295,
+    "b": 7229485430,
+    "name_a": "Rehman Clinig",
+    "name_b": "Muzzamil CLinic"
+   },
+   {
+    "a": 6094592072,
+    "b": 6094684396,
+    "name_a": "sabz sitara",
+    "name_b": "Al-Shafa Clinic"
+   },
+   {
+    "a": 6094684396,
+    "b": 6094726699,
+    "name_a": "Al-Shafa Clinic",
+    "name_b": "Noor Clinic"
+   },
+   {
+    "a": 6109350185,
+    "b": 12178162357,
+    "name_a": "AGA Khan Hospital for Women and Children, Garden East Karachi,",
+    "name_b": "Aga Khan Hospital and Diagnostic Centre, Garden"
+   },
+   {
+    "a": 6109350185,
+    "b": 835694252,
+    "name_a": "AGA Khan Hospital for Women and Children, Garden East Karachi,",
+    "name_b": "Aga Khan Maternity Center"
+   },
+   {
+    "a": 7222487398,
+    "b": 7241935191,
+    "name_a": "Sidho Homeo Pathic",
+    "name_b": "Dr. Noording Clinic"
+   },
+   {
+    "a": 7229396477,
+    "b": 7229396482,
+    "name_a": "Marwat Clinig",
+    "name_b": "Al- Mustafa Care Hospital"
+   },
+   {
+    "a": 7229396477,
+    "b": 7229485438,
+    "name_a": "Marwat Clinig",
+    "name_b": "Tabani Hospital"
+   },
+   {
+    "a": 7229396482,
+    "b": 7229485438,
+    "name_a": "Al- Mustafa Care Hospital",
+    "name_b": "Tabani Hospital"
+   },
+   {
+    "a": 7229485427,
+    "b": 7241498809,
+    "name_a": "Bakht Bhari Hospital",
+    "name_b": "Muskan Welfar Trust"
+   },
+   {
+    "a": 7229485428,
+    "b": 7229485429,
+    "name_a": "Pakistan Medical Centre",
+    "name_b": "Top City Child Clinic"
+   },
+   {
+    "a": 7229485429,
+    "b": 7241491367,
+    "name_a": "Top City Child Clinic",
+    "name_b": "Al-Rehman Clinic"
+   },
+   {
+    "a": 7229485430,
+    "b": 7229485431,
+    "name_a": "Muzzamil CLinic",
+    "name_b": "Asad Clinic"
+   },
+   {
+    "a": 7229485432,
+    "b": 7241491368,
+    "name_a": "Dr. Ahmad Dental Clinic",
+    "name_b": "Muzamil Clinic"
+   },
+   {
+    "a": 7229485433,
+    "b": 641815046,
+    "name_a": "Azam Town General Hospital",
+    "name_b": "Fatima Jinan Dental Hospital"
+   },
+   {
+    "a": 7241483963,
+    "b": 7241491373,
+    "name_a": "Rehmania Dawakhana",
+    "name_b": "Al-Khair Clinic"
+   },
+   {
+    "a": 10688770062,
+    "b": 12258251455,
+    "name_a": "MALC Marie Adlelaide Leprosy Centre Headquarters HQ",
+    "name_b": "MALC Headquarters - Marie Adelaide Leprosy Centre"
+   },
+   {
+    "a": 10688770062,
+    "b": 689884533,
+    "name_a": "MALC Marie Adlelaide Leprosy Centre Headquarters HQ",
+    "name_b": "Marie Adelaide Leprosy Centre"
+   },
+   {
+    "a": 12137573946,
+    "b": 12139134131,
+    "name_a": "Rida Medical Centre",
+    "name_b": "Memon Diabatic and Digonastic Center Gulshan-E-Iqbal"
+   },
+   {
+    "a": 12141510721,
+    "b": 12141569468,
+    "name_a": "Uzma Medical Centre (Previously known as Uzma Maternity Home UMH)",
+    "name_b": "Zahra Dental Clinic"
+   },
+   {
+    "a": 12141569468,
+    "b": 12141579574,
+    "name_a": "Zahra Dental Clinic",
+    "name_b": "Al Noor Medical & General Store"
+   },
+   {
+    "a": 12155148704,
+    "b": 12155149272,
+    "name_a": "Sobhraj Maternity Hospital",
+    "name_b": "Sobhraj Hospital KKF Service"
+   },
+   {
+    "a": 12155148704,
+    "b": 797257211,
+    "name_a": "Sobhraj Maternity Hospital",
+    "name_b": "Sobraj Maternity Hospital"
+   },
+   {
+    "a": 12155149272,
+    "b": 797257211,
+    "name_a": "Sobhraj Hospital KKF Service",
+    "name_b": "Sobraj Maternity Hospital"
+   },
+   {
+    "a": 12161619045,
+    "b": 12161630744,
+    "name_a": "Brooke Hospital For Animals - Pakistan",
+    "name_b": "Richmond Crawford Veterinary Hospital"
+   },
+   {
+    "a": 12161779047,
+    "b": 12161817397,
+    "name_a": "B.H.Y Hospital (Dr. Ahmed S.Y Dermatologist)",
+    "name_b": "Begum Haji Yousuf Hospital"
+   },
+   {
+    "a": 12161786967,
+    "b": 12161793660,
+    "name_a": "Baqai Foot Care Clinic",
+    "name_b": "Baqai Institute of Cardiovascular Disease"
+   },
+   {
+    "a": 5127967766,
+    "b": 12162751022,
+    "name_a": "Al-Khidmat Hospital and Maternity Home",
+    "name_b": "Alkhidmat Virology & Genetic Lab"
+   },
+   {
+    "a": 12162733831,
+    "b": 12162739716,
+    "name_a": "Dow University Hospital - Nazimabad",
+    "name_b": "Govt Maternity Hospital"
+   },
+   {
+    "a": 12164748172,
+    "b": 12164761007,
+    "name_a": "SIUT Hajiani Chatul Bai Dialysis Centre",
+    "name_b": "SIUT dialysis center garden"
+   },
+   {
+    "a": 12168605280,
+    "b": 12168613864,
+    "name_a": "Kutiyana Memon Hospital",
+    "name_b": "Naya Jeevan OPD Network"
+   },
+   {
+    "a": 12178162357,
+    "b": 835694252,
+    "name_a": "Aga Khan Hospital and Diagnostic Centre, Garden",
+    "name_b": "Aga Khan Maternity Center"
+   },
+   {
+    "a": 12179905875,
+    "b": 12179924113,
+    "name_a": "Advance emergency center",
+    "name_b": "Sindh Government Hospital Liaquatabad"
+   },
+   {
+    "a": 12190967951,
+    "b": 12191285743,
+    "name_a": "GMT Centre",
+    "name_b": "Dr Akhtar Khan Rajas Clinic"
+   },
+   {
+    "a": 12190967951,
+    "b": 12191837858,
+    "name_a": "GMT Centre",
+    "name_b": "Metro Health Care"
+   },
+   {
+    "a": 12190967951,
+    "b": 12213603842,
+    "name_a": "GMT Centre",
+    "name_b": "Al Taj diagnostic & Consultant Clinics"
+   },
+   {
+    "a": 12190967951,
+    "b": 12213606437,
+    "name_a": "GMT Centre",
+    "name_b": "The Liver Centre"
+   },
+   {
+    "a": 12191285743,
+    "b": 12191837858,
+    "name_a": "Dr Akhtar Khan Rajas Clinic",
+    "name_b": "Metro Health Care"
+   },
+   {
+    "a": 12191285743,
+    "b": 12213603842,
+    "name_a": "Dr Akhtar Khan Rajas Clinic",
+    "name_b": "Al Taj diagnostic & Consultant Clinics"
+   },
+   {
+    "a": 12191285743,
+    "b": 12213606437,
+    "name_a": "Dr Akhtar Khan Rajas Clinic",
+    "name_b": "The Liver Centre"
+   },
+   {
+    "a": 12191837858,
+    "b": 12213603842,
+    "name_a": "Metro Health Care",
+    "name_b": "Al Taj diagnostic & Consultant Clinics"
+   },
+   {
+    "a": 12191837858,
+    "b": 12213606437,
+    "name_a": "Metro Health Care",
+    "name_b": "The Liver Centre"
+   },
+   {
+    "a": 12206303950,
+    "b": 12206317132,
+    "name_a": "(DENTAL DEPARTMENT)HAWWA MEDICAL CENTER",
+    "name_b": "Hawwa Medical Center \u062d\u0648\u0627 \u0645\u06cc\u0688\u06cc\u06a9\u0644 \u0633\u06cc\u0646\u0679\u0631"
+   },
+   {
+    "a": 12213600924,
+    "b": 12213603842,
+    "name_a": "Bibi Zahida Eye Clinic",
+    "name_b": "Al Taj diagnostic & Consultant Clinics"
+   },
+   {
+    "a": 12213600924,
+    "b": 12213606437,
+    "name_a": "Bibi Zahida Eye Clinic",
+    "name_b": "The Liver Centre"
+   },
+   {
+    "a": 12213603842,
+    "b": 12213606437,
+    "name_a": "Al Taj diagnostic & Consultant Clinics",
+    "name_b": "The Liver Centre"
+   },
+   {
+    "a": 12216047127,
+    "b": 12216056638,
+    "name_a": "CAPTAIN JEHANGIR (PEDAIS-GA)",
+    "name_b": "EPI Center, PIB Maternity Home, Gulshan Iqbal, District East."
+   },
+   {
+    "a": 12218730130,
+    "b": 12218742073,
+    "name_a": "Hijama Centre",
+    "name_b": "H.U.S.R"
+   },
+   {
+    "a": 12224089949,
+    "b": 12224100123,
+    "name_a": "Soldier Bazar Maternity Home",
+    "name_b": "Fatima Zehra Free Dialysis Center JDC foundation ( Soldier Bazar)"
+   },
+   {
+    "a": 12224098728,
+    "b": 12224100123,
+    "name_a": "Oriental Optics & Eye Clinic",
+    "name_b": "Fatima Zehra Free Dialysis Center JDC foundation ( Soldier Bazar)"
+   },
+   {
+    "a": 12250524051,
+    "b": 12256184756,
+    "name_a": "Karachi X-Rays /CT scan & Ultrasound Center",
+    "name_b": "OGDCL Medical Center"
+   },
+   {
+    "a": 12250817895,
+    "b": 12250823652,
+    "name_a": "Jinnah school of Nursing",
+    "name_b": "Eye Ward-11, Jinnah Hospital"
+   },
+   {
+    "a": 12252667172,
+    "b": 681548018,
+    "name_a": "Dr. Ruth K. M. Pfau, Civil Hospital Karachi",
+    "name_b": "Civil Hospital"
+   },
+   {
+    "a": 12258251455,
+    "b": 689884533,
+    "name_a": "MALC Headquarters - Marie Adelaide Leprosy Centre",
+    "name_b": "Marie Adelaide Leprosy Centre"
+   }
+  ],
+  "duplicate_name_clusters": {
+   "ayaan maternity home": 2,
+   "hamdard matab": 2,
+   "hashmanis hospital": 2,
+   "indus hospital": 2,
+   "liaquat national hospital": 2,
+   "national institute of cardiovascular diseases": 2,
+   "sir syed hospital": 2,
+   "zainab panjwani memorial hospital": 2
+  },
+  "inspected": [
+   {
+    "osmid": 4785947196,
+    "element_type": "node",
+    "name": "Clifton Hospital",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.8211201,
+    "lon": 67.0314052,
+    "snap_dist_m": 22.9,
+    "usable": true,
+    "outside_core": false,
+    "limited_scope_name": false
+   },
+   {
+    "osmid": 4786285990,
+    "element_type": "node",
+    "name": "DHA Medical Centre",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.8043811,
+    "lon": 67.0632918,
+    "snap_dist_m": 23.5,
+    "usable": true,
+    "outside_core": false,
+    "limited_scope_name": false
+   },
+   {
+    "osmid": 5051184069,
+    "element_type": "node",
+    "name": "Hassan Railway Hospital",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.8425635,
+    "lon": 67.042606,
+    "snap_dist_m": 103.6,
+    "usable": true,
+    "outside_core": false,
+    "limited_scope_name": false
+   },
+   {
+    "osmid": 5306005133,
+    "element_type": "node",
+    "name": "Sick Bay NORE-I",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.840638,
+    "lon": 67.0032521,
+    "snap_dist_m": 11.3,
+    "usable": true,
+    "outside_core": false,
+    "limited_scope_name": false
+   },
+   {
+    "osmid": 7241491371,
+    "element_type": "node",
+    "name": "Madina Homeo Pethic",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.8468407,
+    "lon": 67.0757205,
+    "snap_dist_m": 101.7,
+    "usable": true,
+    "outside_core": false,
+    "limited_scope_name": true
+   },
+   {
+    "osmid": 12162751022,
+    "element_type": "node",
+    "name": "Alkhidmat Virology & Genetic Lab",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.9048096,
+    "lon": 67.0318703,
+    "snap_dist_m": 95.8,
+    "usable": true,
+    "outside_core": true,
+    "limited_scope_name": false
+   },
+   {
+    "osmid": 12213583964,
+    "element_type": "node",
+    "name": "Dr Mehdi S. Chunara Clinic",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.9193182,
+    "lon": 67.0486818,
+    "snap_dist_m": 175.5,
+    "usable": true,
+    "outside_core": true,
+    "limited_scope_name": true
+   },
+   {
+    "osmid": 723897308,
+    "element_type": "way",
+    "name": "7th Day Adventist Hospital",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.8661719,
+    "lon": 67.02762135272194,
+    "snap_dist_m": 103.0,
+    "usable": true,
+    "outside_core": false,
+    "limited_scope_name": false
+   },
+   {
+    "osmid": 993569855,
+    "element_type": "way",
+    "name": "\u0636\u06cc\u0627\u0621 \u0627\u0644\u062f\u06cc\u0646 \u06c1\u0633\u067e\u062a\u0627\u0644",
+    "amenity": "hospital",
+    "matched_tag": "amenity",
+    "lat": 24.81756055,
+    "lon": 67.00741734084176,
+    "snap_dist_m": 35.9,
+    "usable": true,
+    "outside_core": false,
+    "limited_scope_name": false
+   }
+  ],
+  "disclaimer": "Facilities are OpenStreetMap points carrying an amenity=hospital (or similar) mapper tag. This audit checks coordinates, duplication and naming scope ONLY. No clinical or emergency capability is verified or claimed for any facility."
+ },
+ "assumption_effects": {
+  "boundary": {
+   "origins_within_200m_of_core_edge": 9,
+   "min_origin_distance_to_edge_m": 3.7,
+   "median_origin_distance_to_edge_m": 1621.9,
+   "note": "Facilities are drawn from the full BUFFER area while origins are restricted to CORE; routes near the CORE edge may be truncated relative to a wider network."
+  },
+  "full_way_closures": {
+   "candidate_length_m": {
+    "min": 11.0,
+    "median": 585.0,
+    "max": 4702.0
+   },
+   "note": "Each scenario closes an ENTIRE OSM way (up to 6 km). Real incidents are usually partial and temporary; full-way closure is an upper-bound stress test."
+  },
+  "one_ways": {
+   "candidate_directed_edges": 1301,
+   "directed_edges_without_reverse_twin": 365,
+   "share_pct": 28.1,
+   "note": "Routing is fully directed (one-ways honoured). The share above counts candidate-way directed edges that have no opposite-direction twin, i.e. genuinely one-way segments."
+  },
+  "candidate_bias": {
+   "candidates_count": 100,
+   "candidate_total_length_m": 94621.0,
+   "graph_total_length_km": 8011.1,
+   "coverage_of_network_pct": 1.18,
+   "tiers": {
+    "sample_path_frequency": 50,
+    "stratified_fill": 30,
+    "phase1_origin_path": 12,
+    "phase0_tested": 8
+   },
+   "note": "Candidates are NOT a random sample of the network: 30% come from high path-frequency tiers, which biases towards roads already used by this origin sample. Unlisted roads were not tested and may still matter."
+  }
+ },
+ "verified_findings": [
+  "Reproducibility: all 100 way-level metric rows and all ranking lists recompute exactly from the 10,000 saved per-origin rows (8 metric columns checked; 0 mismatches).",
+  "Independent cross-check: 89 origin-way rows across 11 selected closures reproduce with the Phase 0 networkx engine \u2014 0 distance mismatches, 0 facility-identity mismatches, 0 flag mismatches (tolerance 0.05 m).",
+  "Measured scope: 55 of 100 tested ways measurably affect at least one sampled origin; 0 origin-way disconnections in total. Highest composite score in this sample: OSM 26182600 (Ziauddin Hospital Chowrangi, score 12.895).",
+  "Sensitivity: splitting the same 100 origins into odd/even halves gives top-5 composite overlap 4/5 and affected-count overlap 2/5; an east/west geographic split gives 0/5 and 0/5. Rankings are sample-dependent and must not be read as a citywide criticality ordering.",
+  "Facility audit: 453 mapped points, 453 within the 300.0 m snap limit (median snap 27.1 m, max 175.5 m); 95 near-duplicate pairs within 50 m; 124 usable names suggest limited-scope facilities (e.g. dental/diagnostic). OSM tags do not verify emergency care.",
+  "Study-area effects: 9 sampled origins lie within 200 m of the CORE boundary; candidates cover 1.18% of network length and include 28.1% one-way directed edges. Full-way closures are upper-bound stress tests, not incident forecasts."
+ ],
+ "limitations": [
+  "Origins are a grid-uniform sample \u2014 not population-weighted; results describe this sample only.",
+  "Facilities are unverified OSM tags; no clinical or emergency capability is asserted for any facility.",
+  "Closures are hypothetical and full-way; no flood, traffic, ambulance or casualty modelling is performed.",
+  "Candidate roads are selected (not randomly sampled) and cover a small share of network length; untested roads may be more important.",
+  "Rankings change materially across origin partitions; they are indicative of this sample, not a definitive citywide ranking.",
+  "Graph geometry, one-ways and turn-restriction completeness reflect the 2026-10-09 OSM snapshot and can change conclusions when corrected."
+ ],
+ "disclaimer": "Models hypothetical disruptions to road-network access to mapped facilities. Does not predict flooding, ambulance response, casualties or hospital availability."
+}

@@ -1,0 +1,51 @@
+{
+  "phase": "0B — offline geographic data recovery",
+  "attempt_time_utc": "2026-10-10T14:59:27Z..2026-10-10T15:00:38Z",
+  "official_index": {
+    "url": "https://download.geofabrik.de/asia/pakistan.html",
+    "http_status": 200,
+    "fetched_time_utc": "2026-10-10 (within this session)",
+    "listed_pbf_href": "pakistan-latest.osm.pbf",
+    "page_states": {
+      "file_size": "149 MB",
+      "last_modified": "16 hours before fetch",
+      "osm_data_up_to": "2026-10-09T20:21:04Z"
+    }
+  },
+  "verified_resolved_url": "https://download.geofabrik.de/asia/pakistan/pakistan-latest.osm.pbf",
+  "pre_checks": {
+    "target_file_size_bytes_approx": 149000000,
+    "disk_available": "294 Gi",
+    "capacity_verdict": "feasible (need ~0.15 GB)"
+  },
+  "download_attempt": {
+    "type": "single bounded resumable request",
+    "curl_flags": "--fail --location --continue-at - --max-time 600 --speed-limit 1024 --speed-time 60 --referer <official index>",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126.0 Safari/537.36",
+    "result": "FAILED",
+    "curl_error": "curl: (22) The requested URL returned error: 404",
+    "http_status": 404,
+    "bytes_received": 0,
+    "elapsed_seconds": 0.494818,
+    "partial_file_written": false,
+    "destination": "CityFragility/data/source/pakistan-latest.osm.pbf (does not exist — --fail prevented writing the 404 HTML body)"
+  },
+  "supporting_observations_same_url": [
+    "HEAD request -> HTTP 404, headers: Server Apache; Via 1.1 download-proxy12 (squid/6.14); Cache-Status: download-proxy12;detail=mismatch",
+    "Range GET bytes=0-0 -> HTTP 404, Content-Length: 196, Content-Type: text/html (Apache 404 page)",
+    "Phase 0 earlier attempts (different UA, no referer) -> same HTTP 404",
+    "Index HTML itself serves 200 while every .pbf object under the same host returns 404 — consistent with an intermediary proxy (squid 'download-proxy') failing object fetches, not with the file being removed (index claims 16-hour-old file)"
+  ],
+  "decision": "STOP per Phase 0B instructions: download blocked. No PBF tooling installed (pyrosm absent, by design). No extraction attempted. No baseline/closure numbers produced for Karachi — nothing fabricated, no synthetic data substituted.",
+  "manual_recovery": {
+    "steps": [
+      "1. On any browser (same Mac or another network), open: https://download.geofabrik.de/asia/pakistan.html",
+      "2. Click the link 'pakistan-latest.osm.pbf' (page states 149 MB, OSM data up to 2026-10-09T20:21:04Z)",
+      "3. Save the file to exactly: data/source/pakistan-latest.osm.pbf",
+      "4. Verify: size >= 140 MB AND `file data/source/pakistan-latest.osm.pbf` reports 'OSM PBF file' (not HTML); optional sha256sum for provenance",
+      "5. If the same browser also gets a 404, download on a different network (home/phone hotspot) and copy the file to that exact path",
+      "6. Notify the engineer: extraction will then use pyrosm (conda-forge py312 build, not yet installed) restricted to the CORE+BUFFER bbox, preserving oneway/driving tags, followed by the real baseline + closure + restore run"
+    ],
+    "destination_folder": "data/source/"
+  }
+}

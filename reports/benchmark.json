@@ -1,0 +1,39 @@
+{
+  "retrieval_date": "2026-10-10",
+  "network": {
+    "nodes": 45304,
+    "directed_edges": 122599,
+    "load_seconds": [
+      4.241
+    ]
+  },
+  "project_graph_seconds": [
+    1.828,
+    2.189,
+    2.229
+  ],
+  "snap_origins_seconds": [
+    0.0601,
+    0.0607,
+    0.0597
+  ],
+  "hospitals": {
+    "mapped": 453,
+    "usable_for_routing": 453,
+    "unique_snap_nodes": 419,
+    "note": "usable_for_routing counts hospital facilities within the snap threshold; unique_snap_nodes is the smaller number of distinct graph nodes they map to (facilities can share a node), which is what multi-source Dijkstra actually seeds."
+  },
+  "baseline_dijkstra_seconds": [
+    0.1109,
+    0.1119,
+    0.1118
+  ],
+  "closure_cycle_seconds": [
+    0.1337,
+    0.1346,
+    0.1321
+  ],
+  "closure_way_id": 58733431,
+  "peak_rss_mb": 1899.5,
+  "note": "Algorithmic routing timings on OSM data only. Not traffic, not emergency-response times."
+}

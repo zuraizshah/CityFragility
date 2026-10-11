@@ -1,0 +1,1158 @@
+{
+  "retrieval_date": "2026-10-10",
+  "selected_closure": {
+    "osm_way_id": 58733431,
+    "name": "Aslam Raod (Hiralal Ganatra Road)",
+    "highway": [
+      "tertiary"
+    ],
+    "way_length_in_core_m": 909.4,
+    "graph_edges_in_way": 30,
+    "directed_edges_removed": 30,
+    "removed_edges": [
+      {
+        "u": 2296228513,
+        "v": 7085637076,
+        "key": 0,
+        "u_latlon": [
+          24.8626281,
+          67.0123936
+        ],
+        "v_latlon": [
+          24.8626432,
+          67.0124405
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 5.021,
+        "osmid": 58733431
+      },
+      {
+        "u": 2296228513,
+        "v": 6361489889,
+        "key": 0,
+        "u_latlon": [
+          24.8626281,
+          67.0123936
+        ],
+        "v_latlon": [
+          24.8625818,
+          67.0122386
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 16.464,
+        "osmid": 58733431
+      },
+      {
+        "u": 5105970619,
+        "v": 5130368499,
+        "key": 0,
+        "u_latlon": [
+          24.8613801,
+          67.009904
+        ],
+        "v_latlon": [
+          24.8616279,
+          67.0102855
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 47.336,
+        "osmid": 58733431
+      },
+      {
+        "u": 5130368499,
+        "v": 6838904029,
+        "key": 0,
+        "u_latlon": [
+          24.8616279,
+          67.0102855
+        ],
+        "v_latlon": [
+          24.8616698,
+          67.0103616
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 8.981,
+        "osmid": 58733431
+      },
+      {
+        "u": 5130368499,
+        "v": 5105970619,
+        "key": 0,
+        "u_latlon": [
+          24.8616279,
+          67.0102855
+        ],
+        "v_latlon": [
+          24.8613801,
+          67.009904
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 47.336,
+        "osmid": 58733431
+      },
+      {
+        "u": 6838904029,
+        "v": 6389629197,
+        "key": 0,
+        "u_latlon": [
+          24.8616698,
+          67.0103616
+        ],
+        "v_latlon": [
+          24.8617473,
+          67.0104841
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 15.067,
+        "osmid": 58733431
+      },
+      {
+        "u": 6838904029,
+        "v": 5130368499,
+        "key": 0,
+        "u_latlon": [
+          24.8616698,
+          67.0103616
+        ],
+        "v_latlon": [
+          24.8616279,
+          67.0102855
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 8.981,
+        "osmid": 58733431
+      },
+      {
+        "u": 6389629197,
+        "v": 12324616861,
+        "key": 0,
+        "u_latlon": [
+          24.8617473,
+          67.0104841
+        ],
+        "v_latlon": [
+          24.8618052,
+          67.0105848
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 12.028,
+        "osmid": 58733431
+      },
+      {
+        "u": 6389629197,
+        "v": 6838904029,
+        "key": 0,
+        "u_latlon": [
+          24.8617473,
+          67.0104841
+        ],
+        "v_latlon": [
+          24.8616698,
+          67.0103616
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 15.067,
+        "osmid": 58733431
+      },
+      {
+        "u": 12324616861,
+        "v": 6389629200,
+        "key": 0,
+        "u_latlon": [
+          24.8618052,
+          67.0105848
+        ],
+        "v_latlon": [
+          24.8618183,
+          67.0106076
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 2.723,
+        "osmid": 58733431
+      },
+      {
+        "u": 12324616861,
+        "v": 6389629197,
+        "key": 0,
+        "u_latlon": [
+          24.8618052,
+          67.0105848
+        ],
+        "v_latlon": [
+          24.8617473,
+          67.0104841
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 12.028,
+        "osmid": 58733431
+      },
+      {
+        "u": 6389629200,
+        "v": 6389629202,
+        "key": 0,
+        "u_latlon": [
+          24.8618183,
+          67.0106076
+        ],
+        "v_latlon": [
+          24.8618891,
+          67.0107389
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 15.41,
+        "osmid": 58733431
+      },
+      {
+        "u": 6389629200,
+        "v": 12324616861,
+        "key": 0,
+        "u_latlon": [
+          24.8618183,
+          67.0106076
+        ],
+        "v_latlon": [
+          24.8618052,
+          67.0105848
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 2.723,
+        "osmid": 58733431
+      },
+      {
+        "u": 6389629202,
+        "v": 6849296435,
+        "key": 0,
+        "u_latlon": [
+          24.8618891,
+          67.0107389
+        ],
+        "v_latlon": [
+          24.8619945,
+          67.0109271
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 22.313,
+        "osmid": 58733431
+      },
+      {
+        "u": 6389629202,
+        "v": 6389629200,
+        "key": 0,
+        "u_latlon": [
+          24.8618891,
+          67.0107389
+        ],
+        "v_latlon": [
+          24.8618183,
+          67.0106076
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 15.41,
+        "osmid": 58733431
+      },
+      {
+        "u": 6849296435,
+        "v": 727774976,
+        "key": 0,
+        "u_latlon": [
+          24.8619945,
+          67.0109271
+        ],
+        "v_latlon": [
+          24.8620854,
+          67.0111026
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 20.388,
+        "osmid": 58733431
+      },
+      {
+        "u": 6849296435,
+        "v": 6389629202,
+        "key": 0,
+        "u_latlon": [
+          24.8619945,
+          67.0109271
+        ],
+        "v_latlon": [
+          24.8618891,
+          67.0107389
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 22.313,
+        "osmid": 58733431
+      },
+      {
+        "u": 727774976,
+        "v": 6361489889,
+        "key": 0,
+        "u_latlon": [
+          24.8620854,
+          67.0111026
+        ],
+        "v_latlon": [
+          24.8625818,
+          67.0122386
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 127.57100000000001,
+        "osmid": 58733431
+      },
+      {
+        "u": 727774976,
+        "v": 6849296435,
+        "key": 0,
+        "u_latlon": [
+          24.8620854,
+          67.0111026
+        ],
+        "v_latlon": [
+          24.8619945,
+          67.0109271
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 20.388,
+        "osmid": 58733431
+      },
+      {
+        "u": 6361489889,
+        "v": 2296228513,
+        "key": 0,
+        "u_latlon": [
+          24.8625818,
+          67.0122386
+        ],
+        "v_latlon": [
+          24.8626281,
+          67.0123936
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 16.464,
+        "osmid": 58733431
+      },
+      {
+        "u": 6361489889,
+        "v": 727774976,
+        "key": 0,
+        "u_latlon": [
+          24.8625818,
+          67.0122386
+        ],
+        "v_latlon": [
+          24.8620854,
+          67.0111026
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 127.57100000000001,
+        "osmid": 58733431
+      },
+      {
+        "u": 7085637076,
+        "v": 2144084723,
+        "key": 0,
+        "u_latlon": [
+          24.8626432,
+          67.0124405
+        ],
+        "v_latlon": [
+          24.8627417,
+          67.0127473
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 32.834,
+        "osmid": 58733431
+      },
+      {
+        "u": 7085637076,
+        "v": 2296228513,
+        "key": 0,
+        "u_latlon": [
+          24.8626432,
+          67.0124405
+        ],
+        "v_latlon": [
+          24.8626281,
+          67.0123936
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 5.021,
+        "osmid": 58733431
+      },
+      {
+        "u": 2144084723,
+        "v": 6838904028,
+        "key": 0,
+        "u_latlon": [
+          24.8627417,
+          67.0127473
+        ],
+        "v_latlon": [
+          24.8629049,
+          67.0132709
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 55.856,
+        "osmid": 58733431
+      },
+      {
+        "u": 2144084723,
+        "v": 7085637076,
+        "key": 0,
+        "u_latlon": [
+          24.8627417,
+          67.0127473
+        ],
+        "v_latlon": [
+          24.8626432,
+          67.0124405
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 32.834,
+        "osmid": 58733431
+      },
+      {
+        "u": 6838904028,
+        "v": 2296228544,
+        "key": 0,
+        "u_latlon": [
+          24.8629049,
+          67.0132709
+        ],
+        "v_latlon": [
+          24.8630617,
+          67.0136489
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 41.933,
+        "osmid": 58733431
+      },
+      {
+        "u": 6838904028,
+        "v": 2144084723,
+        "key": 0,
+        "u_latlon": [
+          24.8629049,
+          67.0132709
+        ],
+        "v_latlon": [
+          24.8627417,
+          67.0127473
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 55.856,
+        "osmid": 58733431
+      },
+      {
+        "u": 2296228544,
+        "v": 2144084755,
+        "key": 0,
+        "u_latlon": [
+          24.8630617,
+          67.0136489
+        ],
+        "v_latlon": [
+          24.8631767,
+          67.0139261
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 30.751,
+        "osmid": 58733431
+      },
+      {
+        "u": 2296228544,
+        "v": 6838904028,
+        "key": 0,
+        "u_latlon": [
+          24.8630617,
+          67.0136489
+        ],
+        "v_latlon": [
+          24.8629049,
+          67.0132709
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 41.933,
+        "osmid": 58733431
+      },
+      {
+        "u": 2144084755,
+        "v": 2296228544,
+        "key": 0,
+        "u_latlon": [
+          24.8631767,
+          67.0139261
+        ],
+        "v_latlon": [
+          24.8630617,
+          67.0136489
+        ],
+        "name": "Aslam Raod (Hiralal Ganatra Road)",
+        "highway": "tertiary",
+        "oneway": false,
+        "length_m": 30.751,
+        "osmid": 58733431
+      }
+    ]
+  },
+  "candidates_evaluated": [
+    {
+      "osmid": 26027276,
+      "name": "Lal Muhammad Chaudary Road",
+      "highways": [
+        "tertiary"
+      ],
+      "length_m": 2381.9,
+      "edges": 36,
+      "on_baseline_path_of": [
+        "NIPA Chowrangi, Karachi"
+      ],
+      "edges_removed": 36,
+      "total_delta_m": 359.36,
+      "any_disconnected_origin": false,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": 295.73,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 852.22,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1780.23,
+          "delta_m": 359.36,
+          "pct_change": 25.29,
+          "disconnected": false
+        }
+      ]
+    },
+    {
+      "osmid": 221699173,
+      "name": "Khayaban-e-Shujaat",
+      "highways": [
+        "secondary"
+      ],
+      "length_m": 2339.1,
+      "edges": 21,
+      "on_baseline_path_of": [
+        "DHA Phase 5, Karachi"
+      ],
+      "edges_removed": 21,
+      "total_delta_m": 210.08,
+      "any_disconnected_origin": false,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": 295.73,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 1062.31,
+          "delta_m": 210.08,
+          "pct_change": 24.65,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1420.87,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        }
+      ]
+    },
+    {
+      "osmid": 25976974,
+      "name": "Rafi Shamsi Road",
+      "highways": [
+        "residential"
+      ],
+      "length_m": 2325.1,
+      "edges": 36,
+      "on_baseline_path_of": [
+        "NIPA Chowrangi, Karachi"
+      ],
+      "edges_removed": 36,
+      "total_delta_m": 90.64,
+      "any_disconnected_origin": false,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": 295.73,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 852.22,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1511.51,
+          "delta_m": 90.64,
+          "pct_change": 6.38,
+          "disconnected": false
+        }
+      ]
+    },
+    {
+      "osmid": 484462588,
+      "name": "Khayaban-e-Shamsheer",
+      "highways": [
+        "secondary"
+      ],
+      "length_m": 2139.2,
+      "edges": 23,
+      "on_baseline_path_of": [
+        "DHA Phase 5, Karachi"
+      ],
+      "edges_removed": 23,
+      "total_delta_m": 4.12,
+      "any_disconnected_origin": false,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": 295.73,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 856.35,
+          "delta_m": 4.12,
+          "pct_change": 0.48,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1420.87,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        }
+      ]
+    },
+    {
+      "osmid": 22330872,
+      "name": "Khayaban-e-Tanzeem",
+      "highways": [
+        "tertiary"
+      ],
+      "length_m": 2119.4,
+      "edges": 30,
+      "on_baseline_path_of": [
+        "DHA Phase 5, Karachi"
+      ],
+      "edges_removed": 30,
+      "total_delta_m": 2.41,
+      "any_disconnected_origin": false,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": 295.73,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 854.64,
+          "delta_m": 2.41,
+          "pct_change": 0.28,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1420.87,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        }
+      ]
+    },
+    {
+      "osmid": 22744767,
+      "name": "A Street",
+      "highways": [
+        "residential"
+      ],
+      "length_m": 2110.6,
+      "edges": 10,
+      "on_baseline_path_of": [
+        "DHA Phase 5, Karachi"
+      ],
+      "edges_removed": 10,
+      "total_delta_m": 442.27,
+      "any_disconnected_origin": false,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": 295.73,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 1294.49,
+          "delta_m": 442.27,
+          "pct_change": 51.9,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1420.87,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        }
+      ]
+    },
+    {
+      "osmid": 60933215,
+      "name": null,
+      "highways": [
+        "residential"
+      ],
+      "length_m": 938.6,
+      "edges": 24,
+      "on_baseline_path_of": [
+        "DHA Phase 5, Karachi"
+      ],
+      "edges_removed": 24,
+      "total_delta_m": 2.41,
+      "any_disconnected_origin": false,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": 295.73,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 854.64,
+          "delta_m": 2.41,
+          "pct_change": 0.28,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1420.87,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        }
+      ]
+    },
+    {
+      "osmid": 58733431,
+      "name": "Aslam Raod (Hiralal Ganatra Road)",
+      "highways": [
+        "tertiary"
+      ],
+      "length_m": 909.4,
+      "edges": 30,
+      "on_baseline_path_of": [
+        "Saddar Chowrangi, Karachi"
+      ],
+      "edges_removed": 30,
+      "total_delta_m": 0.0,
+      "any_disconnected_origin": true,
+      "per_origin": [
+        {
+          "origin": "Saddar Chowrangi, Karachi",
+          "before_m": 295.73,
+          "after_m": null,
+          "delta_m": null,
+          "pct_change": null,
+          "disconnected": true
+        },
+        {
+          "origin": "Empress Market, Karachi",
+          "before_m": 191.16,
+          "after_m": 191.16,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Mazar-e-Quaid, Karachi",
+          "before_m": 410.4,
+          "after_m": 410.4,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "Do Talwar, Karachi",
+          "before_m": 300.47,
+          "after_m": 300.47,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "DHA Phase 5, Karachi",
+          "before_m": 852.22,
+          "after_m": 852.22,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        },
+        {
+          "origin": "NIPA Chowrangi, Karachi",
+          "before_m": 1420.87,
+          "after_m": 1420.87,
+          "delta_m": 0.0,
+          "pct_change": 0.0,
+          "disconnected": false
+        }
+      ]
+    }
+  ],
+  "per_origin": [
+    {
+      "origin": "Saddar Chowrangi, Karachi",
+      "before_m": 295.73,
+      "after_m": null,
+      "delta_m": null,
+      "pct_change": null,
+      "disconnected": true,
+      "nearest_hospital_after": null
+    },
+    {
+      "origin": "Empress Market, Karachi",
+      "before_m": 191.16,
+      "after_m": 191.16,
+      "delta_m": 0.0,
+      "pct_change": 0.0,
+      "disconnected": false,
+      "nearest_hospital_after": "Parsi General Hospital"
+    },
+    {
+      "origin": "Mazar-e-Quaid, Karachi",
+      "before_m": 410.4,
+      "after_m": 410.4,
+      "delta_m": 0.0,
+      "pct_change": 0.0,
+      "disconnected": false,
+      "nearest_hospital_after": "Virji Clinic"
+    },
+    {
+      "origin": "Do Talwar, Karachi",
+      "before_m": 300.47,
+      "after_m": 300.47,
+      "delta_m": 0.0,
+      "pct_change": 0.0,
+      "disconnected": false,
+      "nearest_hospital_after": "Clifton Hospital"
+    },
+    {
+      "origin": "DHA Phase 5, Karachi",
+      "before_m": 852.22,
+      "after_m": 852.22,
+      "delta_m": 0.0,
+      "pct_change": 0.0,
+      "disconnected": false,
+      "nearest_hospital_after": "Niazi Hospital- Tauheed Commercial"
+    },
+    {
+      "origin": "NIPA Chowrangi, Karachi",
+      "before_m": 1420.87,
+      "after_m": 1420.87,
+      "delta_m": 0.0,
+      "pct_change": 0.0,
+      "disconnected": false,
+      "nearest_hospital_after": "Samad Clinic Shaheed-e-Millat Rd karachi"
+    }
+  ],
+  "disconnected_origins": [
+    "Saddar Chowrangi, Karachi"
+  ],
+  "monotonic_non_decreasing_verified": true,
+  "restore_verification": {
+    "node_edge_counts_before": [
+      45304,
+      122599
+    ],
+    "node_edge_counts_after": [
+      45304,
+      122599
+    ],
+    "counts_equal": true,
+    "baseline_distances_identical": true,
+    "reproducible": true
+  },
+  "timing_seconds": {
+    "graph_load": 4.66,
+    "baseline_dijkstra": 0.1076,
+    "total_analysis": 11.37
+  },
+  "usable_destinations": 453,
+  "unique_destination_nodes": 419,
+  "study_area_recommendation": "usable"
+}

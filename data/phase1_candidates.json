@@ -1,0 +1,278 @@
+[
+ {
+  "osmid": 26027276,
+  "name": "Lal Muhammad Chaudary Road",
+  "highways": [
+   "tertiary"
+  ],
+  "length_m": 2381.9,
+  "edges": 36,
+  "on_baseline_path_of": [
+   "NIPA Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 359.36,
+  "phase0_any_disconnected": false
+ },
+ {
+  "osmid": 221699173,
+  "name": "Khayaban-e-Shujaat",
+  "highways": [
+   "secondary"
+  ],
+  "length_m": 2339.1,
+  "edges": 21,
+  "on_baseline_path_of": [
+   "DHA Phase 5, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 210.08,
+  "phase0_any_disconnected": false
+ },
+ {
+  "osmid": 25976974,
+  "name": "Rafi Shamsi Road",
+  "highways": [
+   "residential"
+  ],
+  "length_m": 2325.1,
+  "edges": 36,
+  "on_baseline_path_of": [
+   "NIPA Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 90.64,
+  "phase0_any_disconnected": false
+ },
+ {
+  "osmid": 484462588,
+  "name": "Khayaban-e-Shamsheer",
+  "highways": [
+   "secondary"
+  ],
+  "length_m": 2139.2,
+  "edges": 23,
+  "on_baseline_path_of": [
+   "DHA Phase 5, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 4.12,
+  "phase0_any_disconnected": false
+ },
+ {
+  "osmid": 22330872,
+  "name": "Khayaban-e-Tanzeem",
+  "highways": [
+   "tertiary"
+  ],
+  "length_m": 2119.4,
+  "edges": 30,
+  "on_baseline_path_of": [
+   "DHA Phase 5, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 2.41,
+  "phase0_any_disconnected": false
+ },
+ {
+  "osmid": 22744767,
+  "name": "A Street",
+  "highways": [
+   "residential"
+  ],
+  "length_m": 2110.6,
+  "edges": 10,
+  "on_baseline_path_of": [
+   "DHA Phase 5, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 442.27,
+  "phase0_any_disconnected": false
+ },
+ {
+  "osmid": 60933215,
+  "name": null,
+  "highways": [
+   "residential"
+  ],
+  "length_m": 938.6,
+  "edges": 24,
+  "on_baseline_path_of": [
+   "DHA Phase 5, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 2.41,
+  "phase0_any_disconnected": false
+ },
+ {
+  "osmid": 58733431,
+  "name": "Aslam Raod (Hiralal Ganatra Road)",
+  "highways": [
+   "tertiary"
+  ],
+  "length_m": 909.4,
+  "edges": 30,
+  "on_baseline_path_of": [
+   "Saddar Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": true,
+  "phase0_total_delta_m": 0.0,
+  "phase0_any_disconnected": true
+ },
+ {
+  "osmid": 58696130,
+  "name": "Britto Road",
+  "highways": [
+   "tertiary"
+  ],
+  "length_m": 902.9,
+  "edges": 10,
+  "on_baseline_path_of": [
+   "Mazar-e-Quaid, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 40119147,
+  "name": null,
+  "highways": [
+   "residential"
+  ],
+  "length_m": 765.2,
+  "edges": 12,
+  "on_baseline_path_of": [
+   "Do Talwar, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 58693471,
+  "name": "Idgah Lane",
+  "highways": [
+   "residential"
+  ],
+  "length_m": 685.7,
+  "edges": 10,
+  "on_baseline_path_of": [
+   "Saddar Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 218911977,
+  "name": "Yusuf Molai Park Street",
+  "highways": [
+   "residential"
+  ],
+  "length_m": 410.5,
+  "edges": 4,
+  "on_baseline_path_of": [
+   "NIPA Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 755781927,
+  "name": "Depot Lines",
+  "highways": [
+   "tertiary"
+  ],
+  "length_m": 397.2,
+  "edges": 4,
+  "on_baseline_path_of": [
+   "Empress Market, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 26027278,
+  "name": null,
+  "highways": [
+   "residential"
+  ],
+  "length_m": 383.6,
+  "edges": 8,
+  "on_baseline_path_of": [
+   "NIPA Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 60933216,
+  "name": null,
+  "highways": [
+   "residential"
+  ],
+  "length_m": 361.8,
+  "edges": 12,
+  "on_baseline_path_of": [
+   "DHA Phase 5, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 812886992,
+  "name": "Shahrah-e-Qaideen",
+  "highways": [
+   "primary"
+  ],
+  "length_m": 297.1,
+  "edges": 2,
+  "on_baseline_path_of": [
+   "Mazar-e-Quaid, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 740624751,
+  "name": null,
+  "highways": [
+   "residential"
+  ],
+  "length_m": 271.0,
+  "edges": 4,
+  "on_baseline_path_of": [
+   "Saddar Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 79935677,
+  "name": null,
+  "highways": [
+   "residential"
+  ],
+  "length_m": 228.8,
+  "edges": 4,
+  "on_baseline_path_of": [
+   "NIPA Chowrangi, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 219167888,
+  "name": null,
+  "highways": [
+   "residential"
+  ],
+  "length_m": 224.8,
+  "edges": 2,
+  "on_baseline_path_of": [
+   "DHA Phase 5, Karachi"
+  ],
+  "tested_in_phase0": false
+ },
+ {
+  "osmid": 26634723,
+  "name": "2 Talwar",
+  "highways": [
+   "primary"
+  ],
+  "length_m": 221.2,
+  "edges": 10,
+  "on_baseline_path_of": [
+   "Do Talwar, Karachi"
+  ],
+  "tested_in_phase0": false
+ }
+]

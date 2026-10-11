@@ -1,0 +1,100 @@
+{
+  "survey_date": "2026-10-10",
+  "method": "max 2 attempts per source; diagnostic requests capped at 20 s; no source polled more than the budget",
+  "environment": "macOS 26.6.2 arm64, 16 GB RAM, residential/corporate network egress (TLS intercepting proxy suspected for overpass-api.de 406)",
+  "endpoints": [
+    {
+      "source": "overpass-api.de (primary OSMnx default)",
+      "urls": [
+        "https://overpass-api.de/api/status",
+        "https://overpass-api.de/api/interpreter"
+      ],
+      "observations": [
+        "GET /status -> HTTP 406 Not Acceptable (Apache/2.4.68) in <1 s",
+        "POST /interpreter with tiny query and Accept: application/json -> HTTP 406"
+      ],
+      "attempts": 2,
+      "verdict": "BLOCKED from this network (406, not a timeout)"
+    },
+    {
+      "source": "overpass.kumi.systems (official mirror)",
+      "urls": ["https://overpass.kumi.systems/api/interpreter"],
+      "observations": [
+        "earlier on 2026-10-10: HTTP 200, tiny query returned 656 nodes tagged amenity=hospital in bbox (24.70,66.90)-(24.95,67.15) with timestamp_osm_base 2026-07-24T11:04:51Z",
+        "GET /api/status -> HTTP 500 (Apache backend error page, 'Server at overpass Port 80')",
+        "later on 2026-10-10: OSMnx graph_from_polygon POST -> HTTP 500 after the built-in 60 s rate-limit pause",
+        "later on 2026-10-10: independent tiny curl POST -> HTTP 500 in 0.41 s (server-side, not query-size related)"
+      ],
+      "attempts": 3,
+      "verdict": "WAS WORKING, THEN SERVER OUTAGE (consistent HTTP 500 on every endpoint including tiny valid queries)"
+    },
+    {
+      "source": "overpass.private.coffee",
+      "urls": ["https://overpass.private.coffee/api/interpreter"],
+      "observations": ["tiny query -> HTTP 500 in 0.46 s", "GET /api/status -> HTTP 500"],
+      "attempts": 1,
+      "verdict": "OUTAGE (same 500 pattern as kumi)"
+    },
+    {
+      "source": "overpass.osm.ch",
+      "urls": ["https://overpass.osm.ch/api/interpreter"],
+      "observations": [
+        "tiny query -> HTTP 200 in 0.52 s (Overpass API 0.7.62.4)",
+        "way[highway] count in central Saddar bbox (24.86,67.01)-(24.87,67.03) -> 0",
+        "node[amenity=hospital] count in same bbox -> 0",
+        "timestamp_osm_base field returns '117629' (non-standard, consistent with a local/Switzerland-limited extract)"
+      ],
+      "attempts": 2,
+      "verdict": "ALIVE BUT NO KARACHI DATA (Switzerland-focused extract)"
+    },
+    {
+      "source": "overpass.osm.jp",
+      "urls": ["https://overpass.osm.jp/api/status"],
+      "observations": ["no TCP connection (curl exit code 000)"],
+      "attempts": 1,
+      "verdict": "UNREACHABLE from this network"
+    },
+    {
+      "source": "maps.mail.ru/osm/tools/overpass",
+      "urls": ["https://maps.mail.ru/osm/tools/overpass/api/interpreter"],
+      "observations": ["DNS resolution failure: Could not resolve host: maps.mail.ru"],
+      "attempts": 1,
+      "verdict": "UNREACHABLE (DNS)"
+    },
+    {
+      "source": "download.geofabrik.de (officially listed Pakistan PBFs)",
+      "urls": [
+        "https://download.geofabrik.de/asia/pakistan.html",
+        "https://download.geofabrik.de/asia/pakistan/karachi-latest.osm.pbf",
+        "https://download.geofabrik.de/asia/pakistan/pakistan-latest.osm.pbf",
+        "https://download.geofabrik.de/asia/pakistan/pakistan-261009.osm.pbf"
+      ],
+      "observations": [
+        "index page /asia/pakistan.html -> HTTP 200 (lists only whole-country pakistan-*.osm.pbf files; there is NO Karachi or Sindh sub-extract)",
+        "karachi-latest.osm.pbf -> HTTP 404 in 0.82 s (196-byte Apache 404 HTML body) - this extract has never existed",
+        "pakistan-latest.osm.pbf (HEAD and range GET) -> HTTP 404 in 0.49 s",
+        "pakistan-261009.osm.pbf (verbatim href extracted from the official index) -> HTTP 404 in 0.56 s"
+      ],
+      "attempts": 4,
+      "verdict": "PBF DELIVERY 404 FROM THIS NETWORK (index reachable, .pbf objects not)"
+    },
+    {
+      "source": "download.bbbike.org (alternative OSM extract service)",
+      "urls": ["https://download.bbbike.org/osm/bbbike/"],
+      "observations": ["index -> HTTP 200; city directory list contains no Karachi extract"],
+      "attempts": 1,
+      "verdict": "NO KARACHI EXTRACT AVAILABLE"
+    },
+    {
+      "source": "nominatim.openstreetmap.org (origin geocoding only)",
+      "urls": ["https://nominatim.openstreetmap.org/search"],
+      "observations": [
+        "6 landmark queries, HTTP 200, 1.1 s spacing per usage policy",
+        "4/6 resolved to OSM elements inside the CORE bbox; 'Saddar Chowrangi' and 'NIPA Chowrangi' returned only out-of-bbox results and fell back to flagged approximate anchors"
+      ],
+      "attempts": 6,
+      "verdict": "WORKS (used successfully)"
+    }
+  ],
+  "conclusion": "No OSM road-network data source was retrievable for Karachi from this network on 2026-10-10 within the retry budget. No fabricated substitute data was used. Feasibility of the full baseline/closure computation is therefore blocked pending data access, not pending algorithm work."
+}

@@ -1,0 +1,100 @@
+{
+  "retrieval_date": "2026-10-10",
+  "pbf": {
+    "path": "data/source/pakistan-latest.osm.pbf",
+    "bytes": 156739501,
+    "sha256": "a125c80a59a4a534cf4cfa8bc1bc1a762887981c9bafc6dfd7a88a33098a627b",
+    "source_url": "https://download.geofabrik.de/asia/pakistan-latest.osm.pbf",
+    "source_index": "https://download.geofabrik.de/asia/pakistan.html",
+    "index_states": "149 MB, OSM data up to 2026-10-09T20:21:04Z (fetched 2026-10-10)"
+  },
+  "bounding_box_wgs84_wsen": [
+    66.97,
+    24.77,
+    67.12,
+    24.92
+  ],
+  "network": {
+    "parse_seconds": 30.3,
+    "graph_build_seconds": 2.4,
+    "nodes": 45304,
+    "directed_edges": 122599,
+    "directed_edges_without_reverse (one-way segments)": 10702,
+    "network_type": "driving",
+    "direction_policy": "pyrosm to_graph(direction='oneway', network_type='driving'): OSM oneway tag honoured; default OSM two-way otherwise",
+    "simplified": true,
+    "missing_required_attrs": [],
+    "graphml_attr_coercions": [
+      "LineString->str:geometry",
+      "Point->str:geometry",
+      "dict->str:tags",
+      "edge.oneway->False",
+      "edge.oneway->True",
+      "edge.osmid:list(10)->first int + osmids",
+      "edge.osmid:list(11)->first int + osmids",
+      "edge.osmid:list(12)->first int + osmids",
+      "edge.osmid:list(13)->first int + osmids",
+      "edge.osmid:list(14)->first int + osmids",
+      "edge.osmid:list(15)->first int + osmids",
+      "edge.osmid:list(16)->first int + osmids",
+      "edge.osmid:list(17)->first int + osmids",
+      "edge.osmid:list(18)->first int + osmids",
+      "edge.osmid:list(19)->first int + osmids",
+      "edge.osmid:list(197)->first int + osmids",
+      "edge.osmid:list(2)->first int + osmids",
+      "edge.osmid:list(20)->first int + osmids",
+      "edge.osmid:list(21)->first int + osmids",
+      "edge.osmid:list(22)->first int + osmids",
+      "edge.osmid:list(23)->first int + osmids",
+      "edge.osmid:list(24)->first int + osmids",
+      "edge.osmid:list(25)->first int + osmids",
+      "edge.osmid:list(26)->first int + osmids",
+      "edge.osmid:list(27)->first int + osmids",
+      "edge.osmid:list(28)->first int + osmids",
+      "edge.osmid:list(3)->first int + osmids",
+      "edge.osmid:list(30)->first int + osmids",
+      "edge.osmid:list(31)->first int + osmids",
+      "edge.osmid:list(32)->first int + osmids",
+      "edge.osmid:list(34)->first int + osmids",
+      "edge.osmid:list(37)->first int + osmids",
+      "edge.osmid:list(39)->first int + osmids",
+      "edge.osmid:list(4)->first int + osmids",
+      "edge.osmid:list(40)->first int + osmids",
+      "edge.osmid:list(44)->first int + osmids",
+      "edge.osmid:list(5)->first int + osmids",
+      "edge.osmid:list(59)->first int + osmids",
+      "edge.osmid:list(6)->first int + osmids",
+      "edge.osmid:list(61)->first int + osmids"
+    ],
+    "graphml_roundtrip_ok": true
+  },
+  "hospitals": {
+    "extract_seconds": 0.13,
+    "raw_rows_both_tag_queries": 828,
+    "unique_osm_elements": 482,
+    "duplicate_elements_removed_75m_name": 29,
+    "facilities_kept": 453,
+    "tag_frequency": {
+      "name": 449,
+      "amenity": 453,
+      "operator": 7,
+      "addr:city": 353,
+      "addr:street": 358,
+      "opening_hours": 3,
+      "_matched_tag": 453
+    },
+    "geometry_types": {
+      "Point": 408,
+      "Polygon": 45
+    },
+    "saved_gpkg": "data/hospitals.gpkg",
+    "uncertainty_notes": [
+      "OSM tags record what the mapper asserted, not verified service capability.",
+      "amenity/healthcare=hospital does not confirm 24/7 emergency or trauma capability.",
+      "Some entries may be clinics, dispensaries or closed facilities mis-tagged as hospitals.",
+      "No verification against any official health-facility registry was performed.",
+      "Bed counts, ambulance availability and arrival times are not present in the data."
+    ]
+  },
+  "total_seconds": 46.47
+}

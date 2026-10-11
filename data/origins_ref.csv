@@ -1,0 +1,7 @@
+name,ref_lat,ref_lon,source,osm_type,osm_id,display_name
+"Saddar Chowrangi, Karachi",24.8634,67.0126,approximate_anchor_fallback,,,
+"Empress Market, Karachi",24.8622181,67.0296789,nominatim:https://nominatim.openstreetmap.org/search?q=Empress+Market%2C+Karachi&format=jsonv2&limit=5,node,3191210900,"Empress Market, Shahrah-e-Liaquat (Frere Road), Saddar Bazaar, فاؤلر لائنز, صدر, ضلع کراچی, کراچی ڈویژن, سندھ, 75530, پاکستان"
+"Mazar-e-Quaid, Karachi",24.8746966,67.0393217,nominatim:https://nominatim.openstreetmap.org/search?q=Mazar-e-Quaid%2C+Karachi&format=jsonv2&limit=5,node,12151884013,"Mazar-e-Quaid-e-Azam, Shahrah-e-Qaideen, کیتھولک کالونی, جیکب لائنز, جمشید ٹاؤن, ضلع گلشن, کراچی ڈویژن, سندھ, 75000, پاکستان"
+"Do Talwar, Karachi",24.8210182,67.0340956,nominatim:https://nominatim.openstreetmap.org/search?q=Do+Talwar%2C+Karachi&format=jsonv2&limit=5,way,479576934,"Do Talwar, 2 Talwar, صدر ٹاؤن, ضلع کراچی, کراچی ڈویژن, سندھ, 75600, پاکستان"
+"DHA Phase 5, Karachi",24.8071358,67.0444644,nominatim:https://nominatim.openstreetmap.org/search?q=DHA+Phase+5%2C+Karachi&format=jsonv2&limit=5,node,5327511640,"5 ڈی ایچ اے فیز, Khayaban-e-Shujaat, 5 ڈی ایچ اے فیز, صدر ٹاؤن, ضلع کراچی, کراچی ڈویژن, سندھ, 75600, پاکستان"
+"NIPA Chowrangi, Karachi",24.864,67.07,approximate_anchor_fallback,,,

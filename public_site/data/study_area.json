@@ -1,0 +1,23 @@
+{
+ "core_bbox_wgs84_wsen": [
+  66.995,
+  24.795,
+  67.095,
+  24.895
+ ],
+ "buffer_bbox_wgs84_wsen": [
+  66.97,
+  24.77,
+  67.12,
+  24.92
+ ],
+ "graph_nodes": 45304,
+ "graph_edges": 122599,
+ "mapped_facilities": 453,
+ "retrieval_date": "2026-10-10",
+ "snapshot": "Geofabrik pakistan-latest.osm.pbf (2026-10-09 snapshot)",
+ "licence": "Road network and facility data \u00a9 OpenStreetMap contributors, available under the Open Database Licence (ODbL), via Geofabrik.",
+ "analysis_crs": "EPSG:32642",
+ "mode": "precomputed research scenarios \u2014 static site, no live simulation",
+ "disclaimer": "Road-network accessibility model for the bounded central Karachi study area. Not population-representative; not emergency-capability verified; no ambulance/flood/casualty claims."
+}

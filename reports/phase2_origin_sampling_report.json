@@ -1,0 +1,61 @@
+{
+  "retrieval_date": "2026-10-10",
+  "method": "Grid-stratified sampling: CORE bbox divided into 5x5 cells; per cell, drivable degree>=1 graph nodes with a baseline path to a mapped facility are shuffled with seed 20261010 and the first 4 are kept.",
+  "seed": 20261010,
+  "grid_rows": 5,
+  "grid_cols": 5,
+  "per_cell_target": 4,
+  "sample_size": 100,
+  "core_bbox_wgs84_wsen": [
+    66.995,
+    24.795,
+    67.095,
+    24.895
+  ],
+  "exclusions": {
+    "outside_core": 19989,
+    "degree_zero": 0,
+    "unreachable_facility": 0
+  },
+  "per_cell_candidate_counts": {
+    "r0c0": 101,
+    "r0c1": 362,
+    "r0c2": 755,
+    "r0c3": 794,
+    "r0c4": 234,
+    "r1c0": 1157,
+    "r1c1": 698,
+    "r1c2": 1180,
+    "r1c3": 936,
+    "r1c4": 625,
+    "r2c0": 922,
+    "r2c1": 1029,
+    "r2c2": 840,
+    "r2c3": 1396,
+    "r2c4": 1194,
+    "r3c0": 2734,
+    "r3c1": 1259,
+    "r3c2": 1587,
+    "r3c3": 797,
+    "r3c4": 924,
+    "r4c0": 1541,
+    "r4c1": 1056,
+    "r4c2": 1417,
+    "r4c3": 1021,
+    "r4c4": 756
+  },
+  "cells_with_sample": 25,
+  "coverage_diagnostics": {
+    "lat_min": 24.795033,
+    "lat_max": 24.894904,
+    "lon_min": 66.995445,
+    "lon_max": 67.09431,
+    "baseline_dist_min_m": 70.4,
+    "baseline_dist_median_m": 554.8,
+    "baseline_dist_max_m": 1845.4
+  },
+  "regression_note": "The original six Phase 0/1 origins (data/origins_snapped.csv) are preserved separately and are NOT part of this sample.",
+  "interpretation_note": "These are geographic sampling points on the road network, NOT population-weighted demand points and NOT actual patient locations.",
+  "elapsed_s": 6.12,
+  "output_csv": "data/phase2_origins_sample.csv"
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CityFragility — Precomputed Road-Closure Research (Central Karachi)</title>
+  <meta name="description" content="Static exploration of precomputed road-closure scenarios measured on a real OpenStreetMap driving graph of central Karachi. Not a flood, ambulance or emergency-care predictor." />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="assets/public.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="mark">◱</span>
+      <div>
+        <h1>CityFragility</h1>
+        <p class="tagline">How do hypothetical road closures change shortest drivable
+          distances to mapped healthcare in central Karachi?</p>
+      </div>
+    </div>
+    <span class="badge">Static explorer · precomputed scenarios</span>
+  </header>
+
+  <main class="container">
+    <section class="card hero-card">
+      <h2>When a road closes, the nearest hospital can suddenly be much farther away</h2>
+      <p class="hero-lead">Getting to care in a city depends on the road network, not just
+        straight-line distance: one-way streets, detours and blocked links change which
+        hospital is truly closest. <b>CityFragility</b> measures this for one carefully
+        bounded slice of <b>central Karachi</b> — it “closed” 100 real OpenStreetMap road
+        segments in a computer model of the driving network and recalculated, from 100
+        sample locations, how far the nearest mapped healthcare facility became by road.
+        That is <b>10,000 before-and-after measurements</b>, published with their
+        uncertainties.</p>
+      <p class="callout"><b>This page is a static exploration of those saved,
+        precomputed scenarios</b> — the numbers were measured once on the real network and
+        stored; nothing here runs a new simulation. There is <b>no live simulation here</b>.
+        For the interactive single-closure simulator, run the local application
+        described in the project README.</p>
+    </section>
+
+    <section class="card">
+      <h2>Verified study scale</h2>
+      <div class="tiles" id="scale-tiles">Loading saved counts…</div>
+    </section>
+
+    <section class="card">
+      <h2>Study area &amp; tested roads</h2>
+      <p class="hint" id="area-note">Loading study area…</p>
+      <div id="map" role="img" aria-label="Map of the central Karachi study area with tested road segments"></div>
+      <div class="legend" id="map-legend"></div>
+      <p class="hint">Dots = 100 grid-sampled origins. Coloured lines = the 100
+        tested OSM ways (blue → red = lower → higher measured composite
+        disruption score). Dashed rectangles = analysis windows. Click a road
+        for its measured effects. Basemap © OpenStreetMap contributors.</p>
+    </section>
+
+    <section class="card">
+      <h2>Ranked tested roads — measured results</h2>
+      <label class="field-label" for="metric-select">Rank by</label>
+      <select id="metric-select">
+        <option value="disruption_score">Composite disruption score</option>
+        <option value="n_affected">Sampled origins affected</option>
+        <option value="median_extra_m">Median extra drivable metres</option>
+        <option value="max_extra_m">Maximum extra drivable metres</option>
+        <option value="n_newly_disconnected">Newly disconnected origins</option>
+        <option value="n_destination_switched">Destination switches</option>
+      </select>
+      <div class="table-wrap">
+        <table id="roads-table">
+          <thead>
+            <tr><th>#</th><th>Road</th><th>Affected</th><th>Median +m</th><th>Max +m</th><th>Disc.</th><th>Score</th></tr>
+          </thead>
+          <tbody><tr class="empty"><td colspan="7">Loading stored results…</td></tr></tbody>
+        </table>
+      </div>
+      <div id="road-detail" class="detail hidden"></div>
+      <p class="hint"><b>Affected</b> = sampled origins whose nearest-facility
+        route got longer (or vanished) after closing that whole way.
+        <b>+m</b> = extra drivable metres. <b>Disc.</b> = sampled origins left
+        with no drivable path to any mapped facility. These are
+        <b>modelled access changes for a sample</b> — not real flood risk, not
+        verified emergency care, not citywide impact.</p>
+    </section>
+
+    <section class="card" id="sensitivity">
+      <h2>Ranking sensitivity — how stable are the “top 5” lists?</h2>
+      <p class="hint">The same 10,000 measurements were re-ranked on two splits of the
+        sample. Each row shows how many of the top five roads appear in <em>both</em>
+        halves of the split. These are descriptive counts from the stored analysis —
+        <b>not</b> a statistical significance test.</p>
+      <div id="sensitivity-vis" class="prose">Loading sensitivity comparison…</div>
+    </section>
+
+    <section class="card">
+      <h2>What the validation found</h2>
+      <div id="findings" class="prose">Loading stored findings…</div>
+    </section>
+
+    <section class="card">
+      <h2>Methodology</h2>
+      <div id="methodology" class="prose">Loading methodology…</div>
+    </section>
+
+    <section class="card muted-card">
+      <h2>Limitations &amp; what this does NOT claim</h2>
+      <div id="limits" class="prose">Loading limitations…</div>
+    </section>
+
+    <section class="card" id="docs">
+      <h2>Research documentation</h2>
+      <ul class="doc-links">
+        <li><a href="#methodology">Methodology</a> — how origins, roads and scenarios were built (summary below)</li>
+        <li><a href="#sensitivity">Ranking sensitivity</a> — why the top-5 lists are exploratory</li>
+        <li><a href="#limits">Limitations</a> — what this study does not claim</li>
+        <li><a href="#findings">Validation findings</a> — reproducibility &amp; independent cross-check</li>
+        <li>Full documents (<code>METHODOLOGY.md</code>, <code>LIMITATIONS.md</code>,
+          <code>REPRODUCIBILITY.md</code>, <code>DATA_SOURCES.md</code>, research paper)
+          live in the project repository — <span id="repo-link" class="pending-link">link will appear here once the repository is public</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Explore the full interactive project locally</h2>
+      <p class="hint">The complete application — live single-closure simulation
+        with route comparison on the real graph, the full explorer, and the
+        validated findings panel — runs locally in one command (see the
+        project <code>README.md</code>):</p>
+      <pre class="code">cd CityFragility
+env/conda/bin/python -m uvicorn webapp.server:app --host 127.0.0.1 --port 8000
+# open http://127.0.0.1:8000</pre>
+      <p class="hint">The local app loads the real 45,304-node routing graph on
+        first live simulation. This static page never does.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><b>Attribution:</b> Road network and facility data © OpenStreetMap
+      contributors, via Geofabrik (<a href="https://opendatacommons.org/licenses/odbl/">ODbL licence</a>).
+      Map tiles © OpenStreetMap contributors.</p>
+    <p>Precomputed research scenarios for a bounded central-Karachi study area.
+      Not peer-reviewed. Not a citywide model. No flood, ambulance, casualty or
+      emergency-capability predictions. Facility points are unverified OSM tags.
+      Code licence: to be chosen by the author before public release (data remains ODbL).</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="assets/public.js"></script>
+</body>
+</html>
